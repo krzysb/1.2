@@ -1,20 +1,19 @@
 (function ($) {
     $(document).ready(function () {
-        var _1pauza = $("div.grid, div.grid-12").parent();
-        // div.filter(".grid");
+        var _1pauza = $("div.grid.grid-12");
         _1pauza.css("background", "#DAD8D8");
 
-        var _2pauza = $("nav").find("a").filter("[href^='http']");
-        // div.filter(".grid");
+        var _2pauza = $(".nav").find("a").filter("[href^='http']");
         _2pauza.css("background", "#DAD8D8");
 
-        var _4pauza = $("div#text p");
-        _4pauza.filter()
-        _4pauza.css("background", "#DAD8D8");
+        var _3pauza = $("input:checkbox, input:radio").not(":checked")
+        console.log(_3pauza);
+
+        var _4pauza = $("div#text p:empty:first");
         console.log(_4pauza);
 
 
-        var _5pauza = $(".pagination-item:not('span')");
+        var _5pauza = $(".pagination-item").not("span");
         _5pauza.css("background", "#DAD8D8");
     });
 
